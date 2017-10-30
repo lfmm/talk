@@ -6,6 +6,6 @@ export class AppPage {
   }
 
   getParagraphText() {
-    return element(by.css('is-track-root h1')).getText();
+    return element(by.css('is-talk-root h1')).getText();
   }
 }

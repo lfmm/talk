@@ -9,6 +9,6 @@ describe('talk App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to is-track!');
+    expect(page.getParagraphText()).toEqual('Welcome to is-talk!');
   });
 });

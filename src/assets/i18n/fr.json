@@ -1,0 +1,20 @@
+{
+	"HOME": {
+		"FOOTER": {
+			"WELCOME": "French welcome message in FRENCH"
+		}
+	},
+  "NAV": {
+    "TALK": "parler",
+    "TRACK": "piste",
+    "LEARN": "apprendre",
+    "RELAX": "se détendre",
+    "TRANSLATE": "traduire"
+  },
+  "TALK": {
+    "NEW": "new parler",
+    "UPDATE": "update parler",
+    "REMOVE": "remove parler",
+    "SELECT": "select parler"
+  }
+}

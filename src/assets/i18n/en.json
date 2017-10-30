@@ -1,0 +1,19 @@
+{
+	"HOME": {
+		"FOOTER": {
+			"WELCOME": "Welcome footer message in ENGLISH (hey)"
+    }
+	},
+  "NAV": {
+    "TALK": "talk",
+    "TRACK": "track",
+    "LEARN": "learn",
+    "RELAX": "relax"
+  },
+  "TALK": {
+    "NEW": "new talk",
+    "UPDATE": "update talk",
+    "REMOVE": "remove talk",
+    "SELECT": "select talk"
+  }
+}

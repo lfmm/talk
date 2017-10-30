@@ -1,0 +1,20 @@
+{
+	"HOME": {
+		"FOOTER": {
+			"WELCOME": "Seja bem vindo - footer message - in PORTUGUESE"
+		}
+  },
+  "NAV": {
+    "TALK": "falar",
+    "TRACK": "controlar",
+    "LEARN": "aprender",
+    "RELAX": "relaxar",
+    "TRANSLATE": "traduzir"
+  },
+  "TALK": {
+    "NEW": "nova conversa",
+    "UPDATE": "atualizar conversa",
+    "REMOVE": "remover conversa",
+    "SELECT": "selecionar conversa"
+  }
+}

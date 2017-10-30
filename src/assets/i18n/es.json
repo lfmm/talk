@@ -1,0 +1,20 @@
+{
+	"HOME": {
+		"FOOTER": {
+			"WELCOME": "Bien Venido Welcome Message in SPANISH"
+		}
+	},
+  "NAV": {
+    "TALK": "habla",
+    "TRACK": "rastrear",
+    "LEARN": "aprender",
+    "RELAX": "relajarse",
+    "TRANSLATE": "traducir"
+  },
+  "TALK": {
+    "NEW": "nueva habla",
+    "UPDATE": "update habla",
+    "REMOVE": "remove habla",
+    "SELECT": "select habla"
+  }
+}

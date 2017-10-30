@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+@mixin base-font {
+
+  font-family: 'Roboto', sans-serif;
+
+}
+
+@mixin logo-font {
+
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.2rem;
+
+}

@@ -1,21 +1,28 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="containerX" [ngClass]="theme"> <!-- theming with dark-theme and light-theme -->
+  <div class="colorNested box" fxLayout="column">
+    <header *ngIf="layoutState.show.header" class="header">
+      <is-talk-header [logoDesc]="'talk'" (logoClick)="logoClick()"></is-talk-header>
+      <!-- <is-talk-header [logoSrc]="'assets/ttt.png'"></is-talk-header> -->
+    </header>
+    <div id="main" fxLayout="row" fxLayout.xs="column" fxFlex>
+      <nav *ngIf="layoutState.show.nav" fxFlex="1 6 15%" fxFlex.xs="1 6 10%" fxFlexOrder fxFlexOrder.xs="1" class="nav">
+        <is-talk-nav [options]="options" (click)="navClick($event)"></is-talk-nav>
+      </nav>
+      <content *ngIf="layoutState.show.content" fxFlex="3 1 70%" fxFlexOrder fxFlexOrder.xs="2" class="content">
+        <router-outlet></router-outlet>
+      </content>
+      <aside *ngIf="layoutState.show.aside" fxFlex="1 6 20%" fxFlexOrder fxFlexOrder.xs="3" class="aside">
+        aside
+        {{ _cs.currentLanguage | async }}
+        <button type="button" (click)="goBack()">Back</button>
+        <button type="button" (click)="goForward()">Forward</button>
+      </aside>
+    </div>
+    <footer *ngIf="layoutState.show.footer" class="footer">
+      {{ 'HOME.FOOTER.WELCOME' | translate }}
+      <div style="float:right;">
+        <is-talk-language></is-talk-language>
+      </div>
+    </footer>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
-<router-outlet></router-outlet>

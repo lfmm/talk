@@ -117,13 +117,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "is-track",
+      "is-talk",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "is-track",
+      "is-talk",
       "kebab-case"
     ],
     "use-input-property-decorator": true,
